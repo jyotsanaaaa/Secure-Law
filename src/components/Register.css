@@ -1,13 +1,23 @@
 .register-container {
+    margin-top: 80px;
     display: flex;
+    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: #081828;
+    width: 65%;
+    margin-left: auto; /* Add this line */
+    margin-right: auto; /* Add this line */
+    height: auto;
+    background-color: rgb(163, 159, 179);
+    border: 2px solid #fff; /* Add border */
+    padding: 0px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add box shadow */
   }
   
   .register-container h1 {
-    color: #fff;
+    font-size: 35px;
+    color: #2b2b2b;
   }
   
   .container-box {
@@ -20,13 +30,54 @@
   .left-box,
   .right-box {
     width: 45%;
+    box-sizing: border-box;
+  }
+
+  .left-box {
+    width: 45%;
+    margin-right: 20px; /* Add margin-right to create space between the left and right containers */
+    margin-left: -20px;
+    border: 1px solid #000000; /* Border around the left container */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    padding: 15px; /* Optional: Add padding to the left container */
+  }
+  
+  .right-box {
+    width: 45%;
+    margin-left: 10px; /* Add margin-left to create space between the left and right containers */
+    margin-right: -20px;
+    border: 1px solid #000000; /* Border around the right container */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    padding: 15px; /* Optional: Add padding to the right container */
   }
   
   .left-box label,
   .right-box label {
     display: block;
     margin-bottom: 15px;
+    color: rgb(36, 36, 36);
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
   }
+
+.left-box input,
+.left-box select,
+.right-box input,
+.right-box select {
+    width: 100%; /* Set the width of input fields and selects to 100% */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #161616;
+    color: #fff;
+}
+
+
+  .left-box label:nth-child(3) {
+    margin-top: 40px; /* Add margin-top to the third label (Gender) */
+}
+
   
   .left-box input,
   .right-box input,
@@ -36,7 +87,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #081828;
+    background-color: #0f0f0f;
     color: #fff;
   }
   
